@@ -2,13 +2,13 @@
 
 **Dots and Boxes against a CPU, in exactly 1 KiB of HTML.** One file contains the game, its opponent, and the entire visual interface.
 
-[Download the game](https://github.com/reathloo/cheeseByte/releases/latest/download/cheeseByte.html) · [View the source](cheeseByte.html)
+[View the current game file](cheeseByte.html) · [Download v1.0.0](https://github.com/reathloo/cheeseByte/releases/download/v1.0.0/cheeseByte.html)
 
 ## Play
 
 Download `cheeseByte.html` and open it in a browser. No installation or server is needed; it also works offline.
 
-Click between two adjacent dots to draw a line. Complete a box to score a point and take another turn. Your boxes are **green**, the CPU's are **red**. The higher score wins; **NEW** starts another game.
+Click between two adjacent dots to draw a line. Complete a box to score a point and take another turn. Your boxes are **green**, the CPU's are **red**. The higher score wins; **NEW GAME** starts another game.
 
 ## How it fits
 
@@ -17,4 +17,4 @@ Click between two adjacent dots to draw a line. Complete a box to score a point 
 - **A compact CPU:** It evaluates the remaining lines for captures and risky setups. Randomness varies its choices and leaves room for mistakes; it is a heuristic opponent, not a perfect solver.
 - **Drawn in code:** A 356 × 356 canvas renders the dots, lines, and colored boxes. The fills stay inside the lines. There are no image or style assets.
 
-The complete HTML, JavaScript, canvas drawing, scoring, result display, and reset control are **1,024 bytes uncompressed**. Verify the limit with `wc -c cheeseByte.html`. The README is separate from the game file; there is no build step or runtime dependency beyond a browser.
+The current HTML file, including JavaScript, canvas drawing, scoring, result display, and reset control, is **1,024 bytes uncompressed**. Verify the limit with `wc -c cheeseByte.html`. The README is separate from the game file; there is no build step or runtime dependency beyond a browser.
